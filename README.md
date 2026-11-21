@@ -1,0 +1,110 @@
+# Projeto Integrador - 2° Semestre de ADS
+
+## Integrantes:
+- Caio de Almeida Paiva;
+- Ezequiel Feliciano dos Santos;
+- Henryk dos Santos Silva;
+- Ítalo Ferreira da Silva Matos;
+- Lucas Ribeiro Campos.
+
+## INTRODUÇÃO E TECNOLOGIAS PREVISTAS
+
+Para nosso segundo projeto, temos como objetivo a criação de um E-Commerce de produtos eletrônicos.
+
+Utilizaremos algumas ferramentas para isso, tais como:
+- Back-End: Node.js;
+- Front-End: HTML, CSS e Angular;
+- Banco de Dados: MySQL;
+- Versionamento de Código: Git e Github.
+
+## ESTADO ATUAL
+
+Pretendemos atualizar nosso projeto de acordo com a nossa evolução, seja ela diária, semanal ou até mensalmente.
+
+- Versão 0.0.1 
+Atualmente estamos estruturando o banco de dados e criamos os primeiros protótipos das telas do nosso projeto.
+
+- Versão 0.0.2
+Terminamos a criação do nosso banco de dados chamado ecommerce, nessa fase, criamos dois scripts que irão ajudar a criar o banco e inserir as informações necessárias para começar a utilizá-lo. Todas as informações pessoais contidas dos usuários no arquivo dados_teste.sql são apenas para testes, não foi inserida nenhuma informação real.
+
+- Versão 0.0.3
+Adição das pastas docs e frontend ao repositório, a pasta docs contém a ficha de prototipagem do nosso projeto com as telas, o funcionamento esperado e o protótipo inicial das telas. A pasta frontend contém os protótipos das telas do nosso projeto, sendo elas uma versão inicial daquilo que queremos construir.
+
+- Versão 0.0.4
+Adição do arquivo consultas.sql onde adicionamos as principais consultas que utilizamos na construção do banco e verificação dos dados.
+
+- Versão 0.0.5
+Criação do projeto Angular.
+Migração das páginas HTML e CSS para componentes Angular.
+Organização das páginas em componentes independentes.
+Configuração das rotas com app.routes.ts.
+Configuração da navegação entre as páginas.
+Organização das imagens na pasta public/assets/.
+Configuração dos arquivos necessários para executar o projeto.
+
+- Versão 0.0.6
+Backend — Ecommerce
+Backend desenvolvido com Node.js, Express e MySQL.
+
+### Tecnologias utilizadas:
+
+Node.js: execução do JavaScript no servidor.
+Express: criação do servidor e das rotas da API.
+MySQL: banco de dados.
+mysql2: conexão entre Node.js e MySQL.
+CORS: permite comunicação entre frontend e backend.
+dotenv: gerenciamento das configurações locais.
+
+### Funcionalidades implementadas:
+- Conexão com o banco ecommerce.
+- Servidor Express na porta 3000.
+- Rota GET /produtos, que retorna os produtos em JSON.
+- Configuração de CORS e variáveis de ambiente.
+  
+### Como executar:
+
+cd backend
+npm install
+npm run dev
+
+### Testes:
+
+- http://localhost:3000
+- http://localhost:3000/produtos
+  
+Observação: cada integrante deve configurar seu próprio arquivo .env. Ele e a pasta node_modules não devem ser enviados ao GitHub.
+
+
+- Versão 0.0.7
+O que conseguimos fazer: 
+  Integramos o Angular com o backend Node.js.
+  Conectamos a API ao MySQL.
+  Fizemos o catálogo carregar os produtos do banco.
+  Implementamos a exibição dos detalhes e das imagens.
+  Enviamos as alterações sem apagar as atualizações dos colegas.
+  Mantivemos .env e node_modules fora do GitHub.
+
+
+
+## BANCO DE DADOS
+
+Para utilizar o banco de dados, primeiro verifique a pasta banco, a seguir verifique se os dois arquivos estão contidos nela, sendo estrutura.sql e dados_teste.sql, confirmando essa tarefa, siga para a criação do banco, execute os seguintes passos:
+1. Execute os arquivos na seguinte ordem, primeiro o estrutura.sql e depois dados_teste.sql, porque o primeiro cria o banco e as tabelas e o segundo insere os dados das tabelas;
+2. Execute todas as linhas do arquivo estrutura.sql a partir da linha 1, na ordem pré-estabelecida, para criar o banco e obedecer as regras que estabelecemos;
+3. Após a criação do banco, confira se todas as tabelas foram criadas com o comando SHOW TABLES;
+4. Parta para a inserção dos valores nas tabelas, a partir do arquivo dados_teste.sql;
+5. Com o arquivo aberto, execute todas as linhas;
+6. Após a criação do banco e da inserção dos valores, confira se tudo está de acordo com as SELECTs no fim do arquivo, as mesmas irão verificar se tudo foi executado de maneira correta.
+7. Não execute o arquivo dados_teste.sql mais de uma vez, pois há atributos que foram registrados com unicidade, ou seja, não podem se repetir.
+8. Não execute o estrutura.sql após a criação do banco ecommerce, pois isso gerará um erro, porque o banco já foi criado.
+9. O arquivo consultas.sql não faz parte da criação do banco, adicionamos apenas as principais consultas que utilizamos para auxiliar na auditoria dos dados, o execute apenas após a criação do banco, das tabelas e da inserção dos dados.
+
+## ORGANIZAÇÃO DO REPOSITÓRIO
+
+- Pasta banco: Contém todos os arquivos do nosso banco de dados e as principais consultas;
+- Pasta docs: Contém a ficha de prototipagem do projeto;
+- Pasta frontend/prototipo: Contém todos os protótipos de telas do projeto.
+
+## POR ONDE COMEÇAR
+
+Assim que clonar o repositório, leia a documentação README e execute os passos que definimos na seção BANCO DE DADOS, caso queira visualizar o banco de dados. Após isso acesse a pasta docs e leia a ficha de prototipagem, após a leitura retorne a pasta frontend e acesse prototipo, a partir daí execute o arquivo inicio.html, que é a Página Inicial do projeto, no VScode pelo Live Server ou siga o caminho predefinido na ficha de prototipagem.

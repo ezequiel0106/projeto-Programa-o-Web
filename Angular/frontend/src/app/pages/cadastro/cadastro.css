@@ -1,0 +1,109 @@
+/* CSS da página de Login */
+.cadastro {
+    * {
+    --header: #c25433;
+    --main: #faddd3c7;
+    --footer: #7e655e;
+    --creme: #f7d977;
+    --contrast: #be9b737c;
+    --entrar: #22ee55c0;
+    }
+
+    background-color: var(--main);
+    display: grid;
+    gap: 16px;
+    padding: 16px;
+
+.header-cadastro {
+    background-color: var(--header);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    border-bottom: solid 3px var(--creme);
+    border-radius: 20px;
+}
+.main-cadastro {
+
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+
+        h3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 40px;
+        }
+
+        form{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px 16px;
+            width: 100%;
+            max-width: 650px;
+            align-items: center;
+        }
+
+        #nome, #sobrenome, #data_nascimento, #CPF{
+            border-radius: 20px;
+            border: solid 2px var(--creme);
+            padding: 5px 15px;
+        }
+    
+        #email {
+        grid-column: span 2;
+        border-radius: 20px;
+        border: solid 2px var(--creme);
+        padding: 5px 15px;
+        }
+
+        #senha {
+         grid-column: span 2;
+        border-radius: 20px;
+        border: solid 2px var(--creme);
+        padding: 5px 15px;
+        }
+
+        #Entrar {
+        grid-column: span 2;
+        justify-self: center;
+        padding: 7px 20px;
+        margin: 30px;
+        background-color: var(--entrar);
+        border: solid 2px var(--creme);
+        border-radius: 10px;
+        font-weight: bold;
+        }
+        #Entrar:hover {
+        cursor: pointer;
+        }
+    }
+
+.footer-cadastro {
+    background-color: var(--footer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-top: solid 3px var(--creme);
+    border-radius: 20px;
+    
+    img{
+        height: 30px;
+        margin-right: 10px;
+    }
+    h4{
+        display: flex;
+        align-items: center;
+        color: white;
+        padding: 5px;
+    }
+}
+}
